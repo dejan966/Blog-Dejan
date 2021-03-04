@@ -14,8 +14,6 @@ module PostsHelper
       html += link_to "Edit", edit_post_path(post)
       html += ' | '
     end
-
-    html += link_to "Back", posts_path
     html.html_safe
   end
 end
