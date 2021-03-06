@@ -11,12 +11,14 @@
   </head>
 
   <body>
-    <div class="navbar">
-      <%= link_to "Domov" , root_path %>
-      <%= display_session_links %>
+    <div class="container">
+      <div class="navbar">
+        <%= link_to "Domov" , root_path %>
+        <%= display_session_links %>
+      </div>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <%= yield %>
     </div>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
   </body>
 </html>
