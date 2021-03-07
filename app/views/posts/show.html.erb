@@ -1,16 +1,24 @@
+<div class="container marketing">
+<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+  <div class="col p-4 d-flex flex-column position-static">
 <p>
-  <strong>Title:</strong>
+  <strong>Naslov:</strong>
   <%= @post.title %>
 </p>
 
 <p>
-  <strong>Body:</strong>
+  <strong>Besedilo:</strong>
   <%= @post.body %>
 </p>
 
 <p>
-  <strong>Author:</strong>
+  <strong>Avtor:</strong>
   <%= @post.user.email %>
 </p>
 
+<p>
 <%= display_post_show_links(@post) %>
+</p>
+</div>
+</div>
+</div>
